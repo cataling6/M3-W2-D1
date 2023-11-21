@@ -1,0 +1,33 @@
+.card-effect:hover {
+  transform: scale(1.1);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  transition: 0.5s;
+  z-index: 7777;
+}
+.card-effect {
+  overflow: hidden;
+
+  z-index: inherit;
+  transition: 0.5s;
+  min-width: 300px;
+  max-width: 400px;
+}
+.card img {
+  aspect-ratio: 1/1;
+  object-fit: fill;
+}
+
+.container {
+  border-radius: 25px;
+}
+.rotate1 {
+  transform: rotate(30deg);
+}
+
+.rotate2 {
+  transform: rotate(-33deg);
+}
+.rotate3 {
+  transform: rotate(40deg);
+}
