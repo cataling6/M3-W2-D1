@@ -22,7 +22,7 @@ function generaAlbum() {
     let secondi = albums[i].duration % 60;
     rowJS.innerHTML += ` <div class="col-xl-3 col-md-4 col-6">
         <div class="card card-effect">
-          <img src="${albums[i].cover}">
+          <img class="img-thumbnail" src="${albums[i].cover}">
           <div class="card-body">
             <h4 class="card-title">${albums[i].title}</h4>
             <p>Artista: <span id="artist">${albums[i].artist}</span></p>
@@ -51,7 +51,6 @@ for (let i = 0; i < button.length; i++) {
       focus.remove();
     }
 
-    //document.querySelector("#focus").innerHTML = ``;
-    console.log(albums[i].id);
+    // document.querySelector("#focus").innerHTML = ``;
   });
 }

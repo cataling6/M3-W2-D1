@@ -31,3 +31,24 @@
 .rotate3 {
   transform: rotate(40deg);
 }
+p > * {
+  font-weight: bold;
+}
+
+.album-img {
+}
+.album-img img {
+  height: 500px;
+  border-radius: 25px;
+}
+
+.album-details {
+  color: white;
+}
+.tracks {
+  color: white;
+}
+
+.card-body > p {
+  border-bottom: 1px dotted gray;
+}
