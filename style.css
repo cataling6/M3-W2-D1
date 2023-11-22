@@ -7,11 +7,8 @@
 }
 .card-effect {
   overflow: hidden;
-
   z-index: inherit;
   transition: 0.5s;
-  min-width: 300px;
-  max-width: 400px;
 }
 .card img {
   aspect-ratio: 1/1;
