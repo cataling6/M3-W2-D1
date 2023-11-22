@@ -32,7 +32,8 @@ p > * {
   font-weight: bold;
 }
 
-.album-img {
+#dettagli-album {
+  background: transparent;
 }
 .album-img img {
   height: 500px;
