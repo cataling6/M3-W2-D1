@@ -50,3 +50,11 @@ p > * {
 .card-body > p {
   border-bottom: 1px dotted gray;
 }
+
+ul > li {
+  list-style: none;
+}
+
+li > span {
+  font-weight: bold;
+}
