@@ -559,9 +559,12 @@ for (let i = 0; i < button.length; i++) {
     document.querySelector("#focus").innerHTML = ` <div class="album">
         <div class="testa flex-row">
           <div class="d-flex col-12 col-md-12 col-lg-12 flex-wrap">
-            <div class="d-flex album-img  mt-3 col-12 col-md-4 col-lg-4">
+            <div class="d-flex album-img  mt-3 mb-3 col-12 col-md-4 col-lg-4 w-50">
               <img src="${albums[i].cover}" class="img-thumbnail"/>
             </div>
+            <div class="container-list-details w-50">
+            <!-- sezione dettagli album -->
+            <div class="album-details py-3 d-flex justify-content-between"></div>
             <div class="tracks col-12 col-md-8 col-lg-8 mt-3">
               <ul id="lista"></ul>`;
 
@@ -578,7 +581,7 @@ for (let i = 0; i < button.length; i++) {
     }
     let up = document.createElement("div");
     up.classList.add("align-self-end");
-    up.innerHTML = `<a href="#nav"><input type="button" class="btn btn-danger" value="Up" /></a>`;
+    up.innerHTML = `<a href="#nav"><input type="button" class="btn btn-danger orienta" value="Up" /></a>`;
 
     //completo l'album con i dettagli
     document.querySelector(".album-details").innerHTML = ` 
@@ -589,7 +592,7 @@ for (let i = 0; i < button.length; i++) {
               <li>Durata totale: <span>${oreAlbum}h, ${minutiAlbum}minuti e ${secondiAlbum}secondi</span></li>
             </ul>
           </div>`;
-    document.querySelector(".album-details").appendChild(up);
+    document.querySelector(".container-list-details").appendChild(up);
   }
 
   button[i].addEventListener("click", generaAlbum);
