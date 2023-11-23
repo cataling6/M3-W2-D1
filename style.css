@@ -18,7 +18,16 @@
 .container {
   border-radius: 25px;
 }
+.rotate1 {
+  transform: rotate(30deg);
+}
 
+.rotate2 {
+  transform: rotate(-33deg);
+}
+.rotate3 {
+  transform: rotate(40deg);
+}
 p > * {
   font-weight: bold;
 }
@@ -29,6 +38,7 @@ p > * {
 .album-img img {
   width: 500px;
   border-radius: 25px;
+  object-fit: cover;
 }
 
 .album-details {
@@ -48,4 +58,13 @@ ul > li {
 
 li > span {
   font-weight: bold;
+}
+
+.container-list-details {
+  position: relative;
+}
+.orienta {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
 }
