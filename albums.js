@@ -559,10 +559,10 @@ for (let i = 0; i < button.length; i++) {
     document.querySelector("#focus").innerHTML = ` <div class="album">
         <div class="testa flex-row">
           <div class="d-flex col-12 col-md-12 col-lg-12 flex-wrap">
-            <div class="d-flex album-img  mt-3 col-12 col-md-6 col-lg-6">
+            <div class="d-flex album-img  mt-3 col-12 col-md-4 col-lg-4">
               <img src="${albums[i].cover}" class="img-thumbnail"/>
             </div>
-            <div class="tracks col-12 col-md-6 col-lg-6 mt-3">
+            <div class="tracks col-12 col-md-8 col-lg-8 mt-3">
               <ul id="lista"></ul>`;
 
     //estraggo i brani (tracks) dall'array albums
